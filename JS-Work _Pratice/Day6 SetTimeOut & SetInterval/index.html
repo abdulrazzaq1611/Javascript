@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeOut & SetInterval</title>
+</head>
+<body>
+    <h1>This is a heading
+    </h1>
+    Now Time is <span id="time"></span>
+    <script>
+        //settimeout
+        function greet(name) {
+            console.log('Hellow Good Morning' + name);
+        }
+        setTimeout(greet, 5000, ' Hamza');
+
+        //setinterval
+        function greey() {
+            console.log('Hellow Good Night Hamza');
+        }
+        setInterval(greey,1000);
+
+        //Date&Time
+        function displyTime() {
+            time = new Date();
+            // console.log(time);
+            document.getElementById('time').innerHTML=time;
+        }
+        setInterval(displyTime,1000);
+    </script>
+</body>
+</html>

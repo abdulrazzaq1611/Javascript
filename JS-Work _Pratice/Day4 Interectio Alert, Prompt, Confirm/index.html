@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <u>
+        <h1>Interection Alert & Prompt & Confirm</h1>
+    </u>
+    <script>
+        //Alert
+        alert("This is a message");
+
+        //Prompt
+        let name = prompt("What is your name?", "Guest");
+        console.log(name);
+
+        let age = prompt("What is your age?", "age");
+        console.log( name+ " is", age + " year old");
+
+        //Confirm
+        let deletepost = confirm("Do you really want this post?");
+        if (deletepost) {
+            console.log("Your post has been deleted sucessfully ");
+        }
+        else{
+        console.log("Your post has not been deleted sucessfully ");
+        }
+
+
+
+
+        let age1 = 20;
+        let conf = confirm(" Do you  play the cricket?");
+        if (age1>18) {
+            console.log("Yes!I am playing the cricket");
+        }
+        else{
+            console.log("No!I am playing the cricket");
+
+        }
+
+
+            
+    </script>
+</body>
+</html>

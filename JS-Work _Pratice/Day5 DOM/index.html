@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <u>
+        <h1>Introducing DOM</h1>
+    </u>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>ContactUs</li>
+            <li>AboutUs</li>
+            <li>MoreInfo</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1>Another Containers</h1>
+        <ul id="con" class="text">
+            <li>Container1</li>
+            <li>Container2</li>
+            <li>Container3</li>
+            <li>Container4</li>
+            <li>Container5</li>
+        </ul>
+    </div>
+    <script>
+        // ========== ID select==========
+        let main = document.getElementById('main');
+        console.log(main);
+
+        let cen = document.getElementById('nav');
+        console.log(cen);
+
+        // ========== Class select==========
+        let containers = document.getElementsByClassName('container');
+        console.log(containers);
+
+        let Cls = document.getElementsByClassName('text');
+        console.log(Cls);
+          </script>
+</body>
+</html>
